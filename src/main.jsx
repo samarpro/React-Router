@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Home, About, Github } from "./components";
+import { Home, About, Github, LoaderFunction } from "./components";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +21,7 @@ const router = createBrowserRouter([
       {
         path: "Github",
         element: <Github />,
+        loader: LoaderFunction
       },
     ],
   },
